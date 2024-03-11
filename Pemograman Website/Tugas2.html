@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Registrasi</title>
+    <style>
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"],
+        select,
+        textarea {
+            width: calc(100% - 160px);
+            margin-bottom: 1px;
+            box-sizing: border-box;
+        }
+
+        input[type="reset"],
+        input[type="submit"],
+        input[type="button"] 
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Registrasi</h1>
+
+    <div>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Biodata</legend>
+
+                <div>
+                    <label for="nama">Nama Mahasiswa:</label>
+                    <input type="text" id="nama" name="nama" size="20" placeholder="Nama Anda">
+                </div>
+                <div>
+                    <label for="nim">Nomor Induk Mahasiswa (NIM):</label>
+                    <input type="text" id="nim" name="nim" placeholder="Nomor Induk Mahasiswa">
+                </div>
+                <div>
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="alamat" name="alamat" placeholder="Alamat Anda"></textarea>
+                </div>                
+                <div>
+                    <label for="tanggal">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal" name="tanggal">
+                </div>
+                <div>
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" name="gender" value="Pria" id="radio1" checked>
+                    <label for="radio1">Pria</label>
+                    <input type="radio" name="gender" value="Wanita" id="radio2">
+                    <label for="radio2">Wanita</label>
+                </div>
+                <div>
+                    <label for="foto">Upload Foto:</label>
+                    <input type="file" id="foto" name="foto">
+                </div>
+                <div>
+                    <label for="website">URL Website:</label>
+                    <input type="url" id="website" name="website" placeholder="URL Website Anda">
+                </div>
+                <div>
+                    <label for="perguruan_tinggi">Perguruan Tinggi:</label>
+                    <input type="text" id="perguruan_tinggi" name="perguruan_tinggi" placeholder="Perguruan Tinggi">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Info Akun</legend>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email Anda">
+                </div>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Username Anda">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password Anda">
+                </div>
+                <div>
+                    <label for="confirm_password">Ulangi Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Password Anda">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Kemampuan Dasar</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="checkbox1" name="kemampuan" value="HTML">
+                    <label for="checkbox1">HTML</label>
+                    <input type="checkbox" id="checkbox2" name="kemampuan" value="CSS">
+                    <label for="checkbox2">CSS</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="checkbox3" name="kemampuan" value="JavaScript">
+                    <label for="checkbox3">JavaScript</label>
+                    <input type="checkbox" id="checkbox4" name="kemampuan" value="PHP">
+                    <label for="checkbox4">PHP</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="checkbox5" name="kemampuan" value="MySQL">
+                    <label for="checkbox5">MySQL</label>
+                    <input type="checkbox" id="checkbox6" name="kemampuan" value="Laravel">
+                    <label for="checkbox6">Laravel</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="checkbox7" name="kemampuan" value="React">
+                    <label for="checkbox7">React</label>
+                </div>
+            </fieldset>
+            <p>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Simpan">
+                <input type="button" value="Button" onclick="">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
