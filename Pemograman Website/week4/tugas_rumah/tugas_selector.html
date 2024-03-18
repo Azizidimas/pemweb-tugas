@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Root Selector Example</title>
+    <style>
+      :root {
+        --primary-color: rgb(252, 252, 252);
+        --secondary-color: rgb(246, 35, 35);
+      }
+
+      body {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ROOT SELECTOR</h1>
+    <p>
+      Ini adalah contoh penggunaan root selector di CSS untuk mendefinisikan
+      variabel global.
+    </p>
+    <p>
+      Primary color: <span style="color: var(--primary-color)">Text Color</span>
+    </p>
+    <p>
+      Secondary color:
+      <span style="color: var(--secondary-color)">Text Color</span>
+    </p>
+  </body>
+</html>
