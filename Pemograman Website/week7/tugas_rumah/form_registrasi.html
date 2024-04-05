@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Form Registrasi</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" />
+          <div class="error-message" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" />
+          <div class="error-message" id="usernameError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+          <div class="error-message" id="passwordError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">No Telepon:</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Jenis Kelamin:</label>
+          <select id="gender" name="gender">
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="website">Alamat Website:</label>
+          <input type="text" id="website" name="website" />
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="button" class="reset-btn" onclick="resetForm()">Reset</button>
+      </form>
+    </div>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
